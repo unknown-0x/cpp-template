@@ -6,6 +6,7 @@ add_executable(
 add_test(NAME test_math COMMAND test_math)
 
 target_link_libraries(test_math PRIVATE math)
+target_link_libraries(test_math PRIVATE simpletest::main)
 target_include_directories(test_math PRIVATE ${PROJECT_ROOT}/src)
 
 target_import_api(test_math math)

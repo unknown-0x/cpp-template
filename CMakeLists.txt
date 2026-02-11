@@ -27,6 +27,15 @@ add_subdirectory(src)
 
 if(BUILD_TESTING)
     include(CTest)
+    include(FetchContent)
     enable_testing()
+    
+    FetchContent_Declare(
+        simpletest
+        GIT_REPOSITORY https://github.com/unknown-0x/simple-test.git
+        GIT_TAG        main
+    )
+
+    FetchContent_MakeAvailable(simpletest)
     add_subdirectory(test)
 endif()
