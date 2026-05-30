@@ -11,7 +11,7 @@
 This project follows a simple C++ layout:
 
 - `src/` — contains the main source code of the project
-- `tests/` — contains all test cases for testing the codebase
+- `test/` — contains all test cases for testing the codebase
 
 This separation keeps production and test code organized and maintainable.
 
